@@ -1,0 +1,19 @@
+# Spring datasource configuration for PostgreSQL
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydatabase
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+# Spring JPA configuration
+jpa:
+  database-platform: org.hibernate.dialect.PostgreSQLDialect
+  hibernate:
+    ddl-auto: update
+
+# Spring Security configuration
+security:
+  user:
+    name: admin
+    password: adminpassword
